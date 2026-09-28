@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Cadastre-se para participar das ações da ONG Juntos."
+    />
+    <title>Cadastre-se | Juntos</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <header class="site-header">
+      <div class="container navbar">
+        <a class="logo" href="index.html" aria-label="Juntos - página inicial"
+          ><span class="logo-mark" aria-hidden="true">♥</span
+          ><span>Juntos<small>por um futuro melhor</small></span></a
+        >
+        <nav aria-label="Navegação principal">
+          <ul class="nav-list">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a class="nav-cta" href="cadastro.html">Cadastre-se</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="conteudo">
+      <header class="page-header">
+        <div class="container">
+          <h1>Faça parte dessa causa</h1>
+          <p>
+            Cadastre-se para se tornar voluntário, parceiro ou apoiador da nossa
+            ONG.
+          </p>
+        </div>
+      </header>
+      <section class="section">
+        <div class="container form-layout">
+          <div class="form-card">
+            <h2>Cadastro de colaborador</h2>
+            <p>
+              Preencha seus dados. Os campos marcados com * são obrigatórios.
+            </p>
+            <form id="cadastroForm" action="#" method="post">
+              <div class="form-group">
+                <label for="nome">Nome completo *</label
+                ><input
+                  id="nome"
+                  name="nome"
+                  type="text"
+                  placeholder="Digite seu nome completo"
+                  required
+                  minlength="5"
+                  autocomplete="name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="cpf">CPF *</label
+                ><input
+                  id="cpf"
+                  name="cpf"
+                  type="text"
+                  inputmode="numeric"
+                  placeholder="000.000.000-00"
+                  required
+                  maxlength="14"
+                  pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+                  title="Digite o CPF no formato 000.000.000-00"
+                /><small class="help-text">Formato: 000.000.000-00</small>
+              </div>
+              <div class="form-group">
+                <label for="telefone">Telefone *</label
+                ><input
+                  id="telefone"
+                  name="telefone"
+                  type="tel"
+                  inputmode="numeric"
+                  placeholder="(00) 00000-0000"
+                  required
+                  maxlength="15"
+                  pattern="\(\d{2}\)\s\d{5}-\d{4}"
+                  autocomplete="tel"
+                  title="Digite o telefone no formato (00) 00000-0000"
+                /><small class="help-text">Formato: (00) 00000-0000</small>
+              </div>
+              <div class="form-group">
+                <label for="email">E-mail *</label
+                ><input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="Digite seu e-mail"
+                  required
+                  autocomplete="email"
+                />
+              </div>
+              <div class="form-group">
+                <label for="cep">CEP *</label
+                ><input
+                  id="cep"
+                  name="cep"
+                  type="text"
+                  inputmode="numeric"
+                  placeholder="00000-000"
+                  required
+                  maxlength="9"
+                  pattern="\d{5}-\d{3}"
+                  autocomplete="postal-code"
+                  title="Digite o CEP no formato 00000-000"
+                /><small class="help-text">Formato: 00000-000</small>
+              </div>
+              <div class="form-group">
+                <label for="endereco">Endereço *</label
+                ><input
+                  id="endereco"
+                  name="endereco"
+                  type="text"
+                  placeholder="Digite seu endereço completo"
+                  required
+                  autocomplete="street-address"
+                />
+              </div>
+              <fieldset>
+                <legend>Tipo de participação *</legend>
+                <div class="radio-group">
+                  <label class="radio-option"
+                    ><input
+                      type="radio"
+                      name="participacao"
+                      value="voluntario"
+                      required
+                    />Voluntário</label
+                  ><label class="radio-option"
+                    ><input
+                      type="radio"
+                      name="participacao"
+                      value="parceiro"
+                    />Parceiro</label
+                  ><label class="radio-option"
+                    ><input
+                      type="radio"
+                      name="participacao"
+                      value="apoiador"
+                    />Apoiador</label
+                  >
+                </div>
+              </fieldset>
+              <div class="form-group">
+                <label for="mensagem">Mensagem (opcional)</label
+                ><textarea
+                  id="mensagem"
+                  name="mensagem"
+                  placeholder="Conte-nos um pouco sobre você e seu interesse em nosso trabalho."
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <label class="check-option"
+                  ><input type="checkbox" name="privacidade" required />Li e
+                  aceito a política de privacidade.</label
+                >
+              </div>
+              <div class="form-actions">
+                <button class="button" type="submit">Enviar cadastro →</button>
+              </div>
+            </form>
+          </div>
+          <aside class="info-card" aria-labelledby="porque">
+            <h2 id="porque">Por que participar?</h2>
+            <p>
+              Juntos podemos transformar boas intenções em ações que geram
+              impacto na comunidade.
+            </p>
+            <ul class="info-list">
+              <li>🤝 Apoie ações sociais</li>
+              <li>🎓 Contribua com educação</li>
+              <li>💻 Ajude na inclusão digital</li>
+              <li>🌱 Participe de ações sustentáveis</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <section>
+            <h2>Juntos</h2>
+            <p>
+              Uma organização sem fins lucrativos dedicada à solidariedade,
+              inclusão e transformação social.
+            </p>
+          </section>
+          <section>
+            <h3>Links</h3>
+            <ul class="footer-links">
+              <li><a href="index.html">Início</a></li>
+              <li><a href="projetos.html">Projetos</a></li>
+              <li><a href="cadastro.html">Cadastre-se</a></li>
+            </ul>
+          </section>
+          <section>
+            <h3>Contato</h3>
+            <p>contato@juntos.org.br</p>
+            <p>(11) 4000-0000</p>
+          </section>
+        </div>
+        <p class="copyright">© 2026 Juntos. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
