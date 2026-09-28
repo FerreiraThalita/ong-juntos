@@ -10,4 +10,3 @@ Site com três páginas usando HTML5 semântico, CSS3 e JavaScript.
 
 Paleta: #1B5E3A, #10452C, #A7C957, #F7F7F2, #FFFFFF, #333333.
 
-As imagens são carregadas de URLs externas do Unsplash.
